@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>{{ 'EMAIL' | translate }}</ion-label>
+      <ion-input type="email" [(ngModel)]="loginData.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>{{ 'PASSWORD' | translate }}</ion-label>
+      <ion-input type="password" [(ngModel)]="loginData.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button full ion-button color="dark" (click)="login()" [disabled]="!loginData.email || !loginData.password">{{ 'LOGIN' | translate }}</button>
+  <hr>
+  <button full ion-button color="dark" (click)="signup()" icon-only><ion-icon name="create"></ion-icon> {{ 'SIGNUP' | translate }}</button>
+  <button full ion-button color="dark" (click)="facebookLogin()" icon-only>
+    <ion-icon name="logo-facebook"></ion-icon> {{ 'LOG-FACEBBOK' | translate }}
+  </button>
+</ion-content>
