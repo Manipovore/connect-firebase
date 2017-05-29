@@ -1,13 +1,12 @@
 {
   "repository" :
-    { "type" : "git"
-    , "url" : "https://github.com/Manipovore/starfly.git"
+    { "type" : "git",
+		  "url" : "https://github.com/Manipovore/connect-firebase.git"
     },
   "version": "1.0.0",
   "name": "fire-connect",
   "author": "manipovore",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "homepage": "https://manipovore.com/",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
